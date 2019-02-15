@@ -94,7 +94,8 @@ function attachCompiler(compiler) {
 }
 
 function stringifyEsSyntax(node) {
-  return node.value
+  console.log('"' + node.value.trim() + '"')
+  return node.value.trim()
 }
 
 function tokenizeEsSyntax(eat, value) {
